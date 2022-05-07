@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/impression.css" media="print">
+    <link rel="stylesheet" href="../node_modules/mediaelement/build/mediaelementplayer.min.css">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+
+    <script src="../js/messcripts.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+    <script src="../node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+
+    <title>Tourisme Chibougamau</title>
+</head>
+ 
+<body"> 
+    <header id="entete">
+      <div>
+            <ul class="logo"> 
+               <li> <a href="index.html" title="home"> <img src="../images/logo.png" alt="logo"  ></a>
+                  <h1>Meeting Place</h1>
+               </li>
+            </ul>
+                
+          <ul>
+            <li id="version"> <a href="#" lang="fr" title="Version francaise" id="alt-linguistique" data-location-id="page-principale"> 
+               <img  alt="english version" src="../images/btn_francais.png">  </a></li>
+             <li> <img src="../images/slogan_en.gif" alt="meeting place" id="slogan" ></li>
+         </ul>
+      </div>
+    </header>
+
+
+    <nav class="menu">
+             <ul class="lien">
+        
+                <li>Outdoor
+                    <ul>
+                       <li><a onclick="affichefiche('assinica')">Réserve Assinica</a></li>
+                    </ul>
+                </li>
+                <li>Motor sports
+                     <ul>
+                        <li><a onclick="affichefiche('quad')">Quad</a></li>
+                    </ul>
+                </li>
+                <li>Individual sports
+                    <ul>
+                     <li><a onclick="affichefiche('kayak')">Kayak</a></li>
+                    </ul>
+                  </li>
+                   
+                <li> 
+                  <form id="recherche">
+                     <input type="search" name="q" placeholder="search" size="30" required> 
+                     <input type="image" src="../images/interface/Loupe.png" alt="submit" width="32" height="32">
+                  </form>
+               </li>
+               
+         </ul>
+    </nav>
+  
+
+<main id="meta-contenu">
+
+
+<aside class="col2">
+   <div>
+     <div class="figure">
+         <a href="suggest-location.html"  rel="nofollow" title="Suggest a location!"> <img class="image-suggestion" src="../images/interface/icon_suggestion2.svg" alt="suggestion"></a>
+     </div>
+
+     <div>
+         <a href="presentation.html"  title="Who are us?"> <img class="image-contact" src="../images/interface/icon_contact2.svg" alt="Who are us?"> </a>
+     </div>
+     <div>
+     <a href="mailto:admin@tourismechibougamau.com?subject=Contact US!" title="Send a mail"target="_blank" rel="noopener noreferrer"><img  class="image-courriel" alt="courriel"   src="../images/interface/icon_mail2.svg" width="10%"> </a>
+  </div>
+</div>
+</aside>
+
+
+   <div id="col1">
+         <div id="caroussel">
+
+   
+            <div id="assinica">  
+               <a class="prev" title="Lieu précédent"  onclick="affichefiche('kayak')"> &#10094; <span>Next place</span></a>
+               <a class="next" title="Lieu suivant" onclick="affichefiche('quad')"> &#10095; <span>Previous place</span></a>
+      
+               <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+                 <figure>
+                  <img src="../images/caroussel/assinica.png"   alt="reserve assinica">
+                  <figcaption> Credit: Photo - Alain Gauthier </figcaption>
+             </figure>
+               </div>
+
+              
+               <h2>Reserve Assinica (Photo: Reserve's reception)</h2>
+             
+                 <div class="accroche"> <h3>A gem in nature</h3></div>  
+   
+             
+                 <div id="fiche1_description">
+                  <p>Chibougamau is surrounded by 3 wildlife reserves. Located north of Chibougamau and the native village of Oujé-Bougoumou, the Assinica wildlife reserve is popular for its fishing practice.</p>
+                  <p>Covering an area of 8 885 km<sup>2</sup>, chances are you can get some nice fishing trophies.</p>
+                  <p>Come and discover what characterizes our lakes and you will be able to decorate your meals with wild fish that you will have caught yourself!</p>
+               </div>
+               
+               <div class="audio">  
+                  <audio controls id="voice1">
+                   <source src="../audio/en_assinica.mp3" type="audio/mpeg">
+                </audio>
+ 
+                </div>
+
+               <a id ="fiche1_visible" onclick="afficherdescription('fiche1_description','fiche1_visible')">Show details</a>
+
+               <div style="text-align:center">  <!-- Source: https://www.w3schools.com/howto/howto_css_circles.asp -->
+                  <span class="dot_select"></span>
+                  <span class="dot" onclick="affichefiche('quad')"></span>
+                  <span class="dot"onclick="affichefiche('kayak')"></span>
+                </div>
+           
+            </div>
+            
+       
+           <div id="quad">
+             <a class="prev" title="Lieu précédent" onclick="affichefiche('assinica')"> &#10094;<span>Next place</span></a>
+             <a class="next" title="Lieu suivant" onclick="affichefiche('kayak')"> &#10095;<span>Previous place</span></a>
+        
+           
+              <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+               <figure>
+              <img src="../images/caroussel/quad.png" alt="quad">
+              <figcaption>Credit: Photo - Alain Gauthier</figcaption>
+            </figure>
+           </div>
+
+           <h2>Quad's ride</h2>
+
+              <div class="accroche"><h3>Discover our trails</h3></div>  <!-- Accroche -->
+           
+              <div id="fiche2_description">
+                   <p>The region is dotted with a multitude of quad trails. These trails allow you to experience nature and discover our immense region..</p> 
+                   <p>Come and devour miles of freedom. You can also become a member of the Chibougamau mountain bike club. Being a member will allow you to have access to quality marked trails, while circulating in a safe environment. </p>
+              </div>
+
+              <div class="audio">
+               <audio controls id="voice2"> <source src="../audio/en_quad.mp3" type="audio/mpeg">  </audio>
+             </div>
+
+              <a id ="fiche2_visible" onclick="afficherdescription('fiche2_description','fiche2_visible')">Show details</a>
+              <div style="text-align:center">
+               <span class="dot" onclick="affichefiche('assinica')"></span>
+               <span class="dot_select"></span>
+               <span class="dot" onclick="affichefiche('kayak')"></span>
+             </div>
+          </div>
+          
+         
+       
+          <div id="kayak">
+         <a class="prev" title="Lieu précédent" onclick="affichefiche('quad')"> &#10094;<span>Next place</span></a>
+         <a class="next" title="Lieu suivant" onclick="affichefiche('assinica')"> &#10095;<span>Previous place</span></a>
+  
+            <div class="img-hover-zoom img-hover-zoom--quick-zoom">
+               <figure>
+                <img src="../images/caroussel/kayak.jpg" alt="kayak" >
+                <figcaption>  Credit: Photo - Alain Gauthier</figcaption>
+               </figure>
+            </div>
+   
+            <h2>Kayak (Photo:Lac Lemoyne)</h2>
+            
+            <div class="accroche"><h3>An adventure on every ride!</h3></div>  
+            <div id="fiche3_description"> 
+               <p>Water is wealth. Access to water bodies is also part of this wealth.</p>
+               <p>Imagine hiking in real nature. Shows that only you will have the chance to see. Admire nature and its animals at your own pace. </p>
+               <p>Kayaking is in itself, freedom, give yourself this chance and come and participate in the adventure. </p>
+          </div>
+
+            <div class="audio">  <audio controls id="voice3"> <source src="../audio/en_kayak.mp3" type="audio/mpeg">  </audio>  </div>
+   
+           
+            <a id ="fiche3_visible" onclick="afficherdescription('fiche3_description','fiche3_visible')">Show details</a>
+          
+          <div style="text-align:center">
+            <span class="dot"onclick="affichefiche('assinica')"></span>
+            <span class="dot"onclick="affichefiche('quad')"></span>
+            <span class="dot_select"></span>
+          </div>
+       </div>
+            
+         </div>
+</div>
+ 
+<div id="partenaire">
+</div>
+
+
+
+</main>
+
+ <!-- pied de page utilisé sur toutes les pages du site -->
+
+ <footer>
+ <div class="media">
+     <div class="image"><a href="https:\\www.facebook.com" title="Facebook"><img  alt="facebook" src="../images/interface/icon_facebook.svg"></a>  </div>
+     <div class="content">   ©Copyright 2021 Gauthier Web Design. All rigths reserved.  </div>
+     <div class="adresse"> www.tourismechibougamau.com </div>
+   </div>
+</div>
+</footer>
+
+</body>
+
+<script> 
+   window.onload = function() {
+    
+     init_presentation();
+     setAltLanguage();
+     $('audio').mediaelementplayer({stretching: "auto"});
+   }
+  </script>
+</html>

@@ -18,7 +18,7 @@ body {
   background:url(../images/interface/header.jpg) no-repeat center center; 
   background-size: cover;
   height:25vw;
-  background-attachment: fixed;
+ /* background-attachment: fixed; */
   margin-bottom: 3rem;
   min-height: 100%;
  }
@@ -115,9 +115,7 @@ body {
 #caroussel,#fiche1,#fiche2,#fiche3,#fiche4,#fiche5,#fiche6,#fiche7{
   background:rgb(147, 189, 218); 
   padding: 2rem;
-  margin-bottom: 1rem;
   padding-left: 2rem;
-
   position:relative;
  }
 
@@ -287,6 +285,17 @@ footer{
   display:none;
 }
 
+@media screen and (max-width:768px) {
+  #entete,.accroche{
+    display:none;
+  }
+
+    #meta-contenu {
+      margin-top: 5rem;
+    
+    }
+}
+
 /*********************** COMPORTEMENT TAILLE AFFICHAGE min-width:768px***********************/
 
  @media screen and (min-width:768px) {
@@ -320,8 +329,13 @@ footer{
   font-size:xx-large;
   color:#fff;
   }
-} 
 
+  #entete{
+
+    display:block;
+  }
+  
+} 
 
 
 

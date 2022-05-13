@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen">      
+    <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script defer src="../js/menu.js"></script>
+ 
     <title>Nos parcours et débarcadères</title>
 </head>
 <body>
-    <nav class="menu">
+    <nav class="menu" id="myMenu">
                   
         <ul>
            <li><h3>Kayak chiBouGamau</h3></li> 
@@ -17,8 +21,11 @@
            <li><a href="region.html" title="La région et ses habitants">La région et ses habitants</a>
            <li><a href="galerie.html" title="Galerie">Galerie photos</a></li>
            <li><a href="presentation.html" title="Qui sommes-nous?"> Qui sommes-nous </a>
-           <li><a href="mailto:admin@kayakchibougamau?subject=Contacter-nous!" title="Envoyer un courriel"
+            <li><a href="mailto:kayakchibougamau@hotmail.com?subject=Contacter-nous!" title="Envoyer un courriel"
                  target="_blank" rel="noopener noreferrer">Nous rejoindre</a>
+
+           <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i></a></li>    
            <li id="version"> <a href="#" lang="en" title="English Version" id="alt-linguistique"
                  data-location-id="page-principale"> English</a></li>
         
@@ -72,7 +79,7 @@
 
       <h3> Quelques parcours </h3>
 
-      Compatible Garmin, voici quelques parcours que vous pouvez télécharger <br><br>
+     Voici quelques parcours que vous pouvez télécharger <br><br>
 
 
         <a href="..\download/LacGwillim_LacScott.gpx" download="LacGwillim_LacScott.gpx">   <button class="button-22" role="button">Lac Gwillim au Lac Scott</button></a>
@@ -81,10 +88,23 @@
         <a href="..\download/LacMerril_LacDavid.gpx" download="LacMerril_LacDavid.gpx">   <button class="button-22" role="button">Lac Merill au Lac David</button></a>
         <br><br>
         <a href="..\download/RivObatogamoPontKM40.gpx" download="RivObatogamoPontKM40.gpx">   <button class="button-22" role="button">Rivière Obatogamo au Pont du KM40</button></a>
-     
-        <br><br> Visionner le parcours à l'aide de l'application Revive <br><br>
+        <br><br>
+      Pour ma part, j'utilise sur mon ordinateur personnel, le logiciel BaseCamp de Garmin (gratuit) pour la gestion de mes parcours. 
 
-        <a href="https://www.relive.cc/view/vevYo7P5pJ6">   <button class="button-22" role="button">Revive - Lac Gwillim au Lac Scott</button></a>
+      Vous retrouverez toutes les informations de ce produit dans le lien ci dessous
+
+      <h4>
+         <a href="https://www.garmin.com/fr-CA/software/basecamp/">GARMIN - Logiciel BaseCamp</button></a>
+      </h4>
+
+   
+        <br><br> Envie de Visionner vos parcours en 3D. Utiliser l'application REVIVE. <br><br>
+
+        Regarder un exemple produit a partir d'un fichier GPX de Garmin BaseCamp. 
+        <br><br>
+
+
+        <a href="https://www.relive.cc/view/vevYo7P5pJ6">   <img  alt="revive" src="../images/interface/revive.PNG" width="400px"></a>
      
 
         

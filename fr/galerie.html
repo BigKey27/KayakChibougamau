@@ -10,26 +10,32 @@
     <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen"> 
 	<link rel="stylesheet" href="../css/modal.css" media="screen">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/galerie.js" defer ></script>
-     
+    <script defer src="../js/menu.js"></script>
+
     <title>Notre galerie photos</title>
 </head>
 <body>
-  <nav class="menu">
+  <nav class="menu" id="myMenu">
                   
     <ul>
        <li><h3>Kayak chiBouGamau</h3></li> 
        <li><a href="index.html">Accueil</a></li>
        <li><a href="region.html" title="Carte de la région"> La région et ses habitants</a>
        <li><a href="parcours.html" title="Carte de la région"> Carte interactive</a>
-      <li><a href="presentation.html" title="Qui sommes-nous?"> Qui sommes-nous </a>
-       <li><a href="mailto:admin@kayakchibougamau?subject=Contacter-nous!" title="Envoyer un courriel"
+       <li><a href="presentation.html" title="Qui sommes-nous?"> Qui sommes-nous </a>
+        <li><a href="mailto:kayakchibougamau@hotmail.com?subject=Contacter-nous!" title="Envoyer un courriel"
              target="_blank" rel="noopener noreferrer">Nous rejoindre</a>
+             <li><a href="javascript:void(0);" class="icon" onclick="minMenu()">
+                <i class="fa fa-bars"></i></a></li>
        <li id="version"> <a href="#" lang="en" title="English Version" id="alt-linguistique"
              data-location-id="page-principale"> English</a></li>
     
     </ul>
 </nav>
+
+
 <br><br><br><br>
 <div id="photo1" class="modal">
     <div class="modal-content">

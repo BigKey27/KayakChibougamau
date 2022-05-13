@@ -18,8 +18,10 @@ body {
   background:url(../images/interface/header.jpg) no-repeat center center; 
   background-size: cover;
   height:25vw;
+  background-attachment: fixed;
   margin-bottom: 3rem;
-}
+  min-height: 100%;
+ }
 
 #entete h1,.titre-form{
   display:none;
@@ -31,6 +33,7 @@ body {
   margin-top:0.5rem;
   width:30%;
   z-index: -1;
+ 
 }
 
 #entete2
@@ -284,15 +287,6 @@ footer{
   display:none;
 }
 
- /*********************** COMPORTEMENT TAILLE AFFICHAGE max-width:767px**********************
- 
- @media screen and (max-width:767px) {
-  .lien {
-    display:flex;
-    flex-direction: column;}
-}
- */
-
 /*********************** COMPORTEMENT TAILLE AFFICHAGE min-width:768px***********************/
 
  @media screen and (min-width:768px) {
@@ -331,7 +325,7 @@ footer{
 
 
 
-/*********************** Cbutton parcours ***********************/
+/*********************** button parcours ***********************/
 .button-22 {
   align-items: center;
   appearance: button;

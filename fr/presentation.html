@@ -5,11 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen">                
+        <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        <script defer src="../js/menu.js"></script>       
         <title>Qui sommes-nous?</title>
     </head>
     <body>  
-      <nav class="menu">
+      <nav class="menu" id="myMenu">
                   
          <ul>
             <li><h3>Kayak chiBouGamau</h3></li> 
@@ -17,8 +19,10 @@
             <li><a href="region.html" title="La région et ses habitants">La région et ses habitants</a>
             <li><a href="parcours.html" title="Carte de la région"> Carte interactive</a>
             <li><a href="galerie.html" title="Galerie">Galerie photos</a>
-            <li><a href="mailto:admin@kayakchibougamau?subject=Contacter-nous!" title="Envoyer un courriel"
+               <li><a href="mailto:kayakchibougamau@hotmail.com?subject=Contacter-nous!" title="Envoyer un courriel"
                   target="_blank" rel="noopener noreferrer">Nous rejoindre</a>
+                  <li><a href="javascript:void(0);" class="icon" onclick="minMenu()">
+                     <i class="fa fa-bars"></i></a></li>
             <li id="version"> <a href="#" lang="en" title="English Version" id="alt-linguistique"
                   data-location-id="page-principale"> English</a></li>
          

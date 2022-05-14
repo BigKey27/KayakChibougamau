@@ -286,7 +286,7 @@ footer{
 }
 
 @media screen and (max-width:768px) {
-  #entete,.accroche{
+  #entete,#entete2,#entete3,#entete_region,.accroche{
     display:none;
   }
 
@@ -294,7 +294,14 @@ footer{
       margin-top: 5rem;
     
     }
+    #img_droite {
+      display:block;
+    }
+    #img_gauche {
+      display:none;
+    }
 }
+
 
 /*********************** COMPORTEMENT TAILLE AFFICHAGE min-width:768px***********************/
 
@@ -330,11 +337,16 @@ footer{
   color:#fff;
   }
 
-  #entete{
-
+  #entete,#entete2,#entete3,#entete_region,.accroche{
     display:block;
   }
-  
+
+  #img_droite {
+    display:none;
+  }
+  #img_gauche {
+    display:block;
+  }
 } 
 
 

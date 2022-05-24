@@ -68,6 +68,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  position: relative;
+  text-align: center;
+  color: white;
   display: block;
 }
 
+/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+.top-right {
+  position: absolute;
+  top:12px;
+  right:25px;
+}

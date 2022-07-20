@@ -19,7 +19,7 @@ body {
   background-size: cover;
   height:25vw;
  /* background-attachment: fixed; */
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   min-height: 100%;
  }
 
@@ -42,7 +42,7 @@ body {
   background:url(../images/interface/GoogleMymaps.PNG) no-repeat center center; 
   background-size: cover;
   height:25vw;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #entete3
@@ -51,7 +51,7 @@ body {
   background:url(../images/panomarique/LacAuxDores2.jpg) no-repeat center center; 
   background-size: cover;
   height:25vw;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #entete_region
@@ -60,7 +60,7 @@ body {
   background:url(../images/panomarique/LacGwillim.jpg) no-repeat center center; 
   background-size: cover;
   height:25vw;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -126,13 +126,12 @@ body {
 #caroussel img{
   max-width: 100%;
   height: 400px;
-  width:700px;
+  width: 700px;
   border-top-left-radius: 25px 50px;
   border-top-right-radius:25px 50px;
   border-bottom-left-radius:25px 50px;
   border-bottom-right-radius:25px 50px;
-  padding-bottom: 1rem;
-  
+   
 }
 
 .prev, .next {
@@ -285,6 +284,9 @@ footer{
   display:none;
 }
 
+/* ***** MEDIA SCREEN ***** */
+
+
 @media screen and (max-width:768px) {
   #entete,#entete2,#entete3,#entete_region,.accroche{
     display:none;
@@ -299,6 +301,19 @@ footer{
     }
     #img_gauche {
       display:none;
+    }
+
+    #caroussel img{
+      max-width: 100%;
+      height: 400px;
+      width: 300px;
+      border-top-left-radius: 25px 50px;
+      border-top-right-radius:25px 50px;
+      border-bottom-left-radius:25px 50px;
+      border-bottom-right-radius:25px 50px; 
+      display: block;
+      margin: 10px auto;
+    
     }
 }
 

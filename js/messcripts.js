@@ -13,7 +13,7 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
-// Fonction masquant les fiches dans le caroussel (la fiche par défaut est choisi au hasard)
+// Fonction masquant les fiches dans le caroussel (la fiche par défaut est choisie au hasard)
 
 function init_presentation() {
  

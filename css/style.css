@@ -228,7 +228,7 @@ figcaption {
 .presentation-texte h2{
 margin-bottom: 3rem;
 margin-top: 3rem;
-text-decoration: overline;
+text-decoration:underline;
 }
 .presentation-texte p{
   margin-bottom: 2rem;
@@ -258,8 +258,6 @@ text-decoration: overline;
  margin-top:5rem;
  margin-bottom:5rem;
 }
-
-
 
 
 /*********************** FOOTER ***********************/
@@ -293,10 +291,6 @@ footer{
       padding-left: 1rem;
    }
 
-
-
-
-
   #entete,#entete2,#entete3,#entete_region,.accroche,.desc,.prev,.next{
     display:none;
   }
@@ -305,12 +299,13 @@ footer{
       margin-top: 4rem;
     
     }
- /*   #img_droite {
+
+    #img_droite {
       display:block;
     }
     #img_gauche {
-      display:block;
-    }*/
+      display:none;
+    }
 
     #caroussel img{
       max-width: 100%;
@@ -364,7 +359,7 @@ footer{
   color:#fff;
   }
 
-  #entete,#entete2,#entete3,#entete_region,.accroche{
+  #entete,#entete2,#entete3,#entete_region,.accroche,.desc,.prev,.next{
     display:block;
   }
 

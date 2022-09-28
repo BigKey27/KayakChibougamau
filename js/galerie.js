@@ -6,16 +6,16 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   let plan = [
     'Lac Chibougamau',
-    '',
+    'Lac Bourbeau',
     'Lac Chibougamau',
     'Lac Chibougamau',
     'Lac Cavan',
     '',
     'Lac Bourbeau',
     'Lac Bourbeau',
+    'Lac Opémiska',
     '',
-    '',
-    '',
+    'Lac Chibougamau',
     '',
     '',
     'Lac Chibougamau',
@@ -28,16 +28,19 @@ function onClick(element) {
     'Lac Ross',
     'Lac Oreille',
     '',
-    '',
+    'Lac Ross',
     '',
     'Lac Chibougamau',
     '',
     '',
-    '',
-    'Lac Guilman',
+    'Lac Chibougamau',
+    'Lac Gilman',
     'Lac Merrill',
     '',
-    ''
+    '',
+	'Lac Gilman',
+	'Lac Bourbeau',
+	'Lac Gilman'
   ];
   let accroche = [
     'Zénitude de la Baie McKenzie',
@@ -72,7 +75,10 @@ function onClick(element) {
     '',
     '',
     '',
-    ''
+    '',
+	'',
+	'',
+	''
   ];
   document.getElementById("plan").innerHTML = plan[element.alt - 1];
   document.getElementById("accroche").innerHTML = accroche[element.alt - 1];

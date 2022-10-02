@@ -40,7 +40,9 @@ function onClick(element) {
     '',
 	'Lac Gilman',
 	'Lac Bourbeau',
-	'Lac Gilman'
+	'Lac Gilman',
+  'Lac Ross',
+  'Lac Gilman'
   ];
   let accroche = [
     'Zénitude de la Baie McKenzie',

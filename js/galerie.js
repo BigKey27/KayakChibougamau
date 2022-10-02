@@ -80,6 +80,8 @@ function onClick(element) {
     '',
 	'',
 	'',
+  '',
+  '',
 	''
   ];
   document.getElementById("plan").innerHTML = plan[element.alt - 1];

@@ -17,28 +17,14 @@
 
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width:50%;
-height: 50%;
-    }
-    .modal {
-      width: 50%; 
-      height: 50%;
-    } 
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (min-width: 700px){
+@media only screen and (max-width: 699px){
   .modal-content {
-      width:100%;
-
-  }
-
+    background-color:chartreuse;
+    width: 50%; 
+    height: 80%; 
+   }
 
 }
-
-
 
 .modal {
   display: none; 
@@ -55,11 +41,12 @@ height: 50%;
 
 .modal-content {
   background-color: #fefefe;
+ 
   margin: 5% auto;
   padding: 10px;
   border: 1px solid #888;
-  width: 50%; 
-  height: 60%; 
+  width:50%; 
+  height:auto;
   text-align:center; 
  }
 
@@ -85,6 +72,7 @@ height: 50%;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  height: auto;
   position: relative;
   text-align: center;
   color: white;

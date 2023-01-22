@@ -1,74 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
-        <script src="../js/messcripts.js"></script>
-
-        <title>About Us</title>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        <script defer src="../js/menu.js"></script>       
+        <title>Who we are?</title>
     </head>
-    <body>
-      <header id="entete">
-        <div>
-            <ul class="logo"> 
-                <li> <a href="index.html"> <img src="../images/logo.png" alt="logo" title="accueil"></a>
-                     <h1>Meeting Place</h1>
-                </li>
-             </ul>
-        </div>
-        <div id="version">
-         <a href="#" lang="fr" title="Version francaise" id="alt-linguistique" data-location-id="presentation"> 
-            <img  alt="Version francaise" src="../images/btn_francais.png"> </a>
-        </div>
+    <body>  
+      <nav class="menu" id="myMenu">
+        <ul>
+         <li><h3>Who we are</h3></li> 
+         <li><a href="index.html">Home</a></li>
+         <li><a href="region.html" titre="The region and its residents">The region and its residents</a> </li>
+         <li><a href="journey.html" title="Interactive map">Interactive map</a> </li>
+         <li><a href="gallery.html" title="Gallery">Picture Gallery</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="minMenu()">
+             <i class="fa fa-bars"></i></a></li>
+         <li id="version"> <a href="#" lang="fr" title="French Version" id="alt-linguistique"
+               data-location-id="page-principale">French</a></li>
+      </ul>
+    </nav>
+
+    <header id="entete3">
     </header>
    
-    <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li>About Us</li>
-      </ul>
-      
-
     <main id="meta-contenu">
-        
-      
-    <div class="presentation"> 
-       <div class="bienvenue">
-          <img src="../images/interface/bienvenue.jpg" alt="chibougamau">
-          <div>
-             Photo credit: Alain Gauthier
-          </div>
+      <div class="presentation"> 
+       <div class="bienvenue" id="img_gauche">
+        <img src="../images/interface/bienvenue.jpg" alt="chibougamau">
        </div>
   
        <div class="presentation-texte">
-      
-         <h1>Tourisme Chibougamau </h1> 
-           <p>presents the most populous city of the Eeyou Istchee Baie-James region, CHIBOUGAMAU.</p>
-           <p>Our mission is to promote our city by presenting its attractions and the people who live there.</p>
-           <p>Discover the heart of Northern Quebec by browsing its history and these warm inhabitants.</p>
-           <p>Nestled in the heart of the wild forest, Chibougamau, outdoor life and adventure. We could also say mines and forests. These are the main characteristics of our economy and this is what gave birth to our city around 1956.</p>
-           <p>Chibougamau means 'meeting place', what a good excuse to come and meet us and live this unique experience with us.</p>
-        </div>
+         <div class="bienvenue">
+            <img id="img_droite" src="../images/interface/bienvenue.jpg" alt="chibougamau">
+         </div>
+          <h1>Plein Air Ungava - Kayak </h1> 
+       
+          <p> Is a group of amateur kayak enthousiasts from Chibougamau/Chapais.</p>
+          
+          <p> Our mission is to share information about access to the different lakes so you can practice your favourite sport safely.</p>
+          <p> You can find a few alternate paths labelled (A-B)  to try out on the interactive map.</p> 
+          <p> All outlined paths are suitable for all experience levels. </p>
 
-</div>
+          <p> Looking forward to seeing you on the water! </p>
+
+
+         <div class="auteur"> 
+           <img src="../images/interface/auteur.jpg" alt="auteur"><p> Auteur: Alain Gauthier</p>
+         </div>
+
+         <figure>
+            <figcaption> Credit: Photo - Gilles Paquette</figcaption>
+         </figure>
+      </div>
+
+  </div>
 
 </main>
+  </body>
 
- 
- <footer>
-    <div class="media">
-      <div class="image"><a href="https:\\www.facebook.com" title="Facebook"><img  alt="facebook" src="../images/interface/icon_facebook.svg"></a>  </div>
-           <div class="content">   ©Copyright 2021 Gauthier Web Design. All Rigths Reserved.  </div>
-      </div>
-   </div>
-   </footer>
-</body>
+<footer>
+   <div class="media">
+      <div class="image"><a href="https://www.facebook.com/groups/2406394959592461" title="Facebook"><img  alt="facebook" src="../images/interface/icon_facebook.svg"></a>  </div>
+      <div class="adresse"> www.fiche3chibougamau.org </div>
+    </div>
+  </div>
+  </footer>
 
 <script> 
-   window.onload = function() {
+
+  window.onload = function() {
        setAltLanguage();
-   }
-  </script>
+  }
+ </script>
 
 </html>

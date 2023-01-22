@@ -122,7 +122,9 @@ document.getElementById(ch).style.backgroundColor="gray";
 function setAltLanguage() {
   var pagesDictionary = { "page-principale": {fr: "../fr/index.html", en: "../en/index.html"},
                           "presentation": {fr: "../fr/presentation.html", en: "../en/presentation.html"},
-                          "suggerer-lieu": {fr: "../fr/suggerer-lieu.html", en: "../en/suggest-location.html"}
+                          "galerie": {fr: "../fr/galerie.html", en: "../en/gallery.html"},
+                          "parcours": {fr: "../fr/parcours.html", en: "../en/journey.html"},
+                          "region": {fr: "../fr/region.html", en: "../en/region"}
   };
 
   var element = document.getElementById('alt-linguistique');

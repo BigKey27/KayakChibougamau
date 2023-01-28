@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../css/menu.css" media="screen"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../js/messcripts.js"></script>
     <script defer src="../js/menu.js"></script>
     <title>Water access point</title>
 </head>
@@ -22,8 +23,8 @@
          <li><a href="presentation.html" title="Who we are?">Who we are? </a>
          <li><a href="javascript:void(0);" class="icon" onclick="minMenu()">
              <i class="fa fa-bars"></i></a></li>
-         <li id="version"> <a href="#" lang="fr" title="French Version" id="alt-linguistique"
-               data-location-id="page-principale">French</a></li>
+         <li id="version"> <a href="#" lang="en" title="French Version" id="alt-linguistique"
+               data-location-id="parcours">Français</a></li>
       </ul>
 
    </nav>
@@ -72,7 +73,12 @@
 </div>
 </main>
 </body>
+<script> 
 
+   window.onload = function() {
+        setAltLanguage();
+   }
+  </script>
 <footer>
    <div class="media">
       <div class="image"><a href="https://www.facebook.com/groups/2406394959592461" title="Facebook"><img  alt="facebook" src="../images/interface/icon_facebook.svg"></a>  </div>

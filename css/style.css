@@ -54,6 +54,15 @@ body {
   margin-bottom: 1rem;
 }
 
+#entete_partenaires
+{
+  padding:5%;
+  background:url(../images/panomarique/LacCavan.jpg) no-repeat center center; 
+  background-size: cover;
+  height:25vw;
+  margin-bottom: 1rem;
+}
+
 #entete_region
 {
   padding:5%;
@@ -199,6 +208,13 @@ figcaption {
   display: inline-block;
  }
 
+/*********************** PAGE PARTENAIRES ***********************/
+
+.partenaires img {
+  width:40%;
+  height:auto;
+  border-radius: 5%;
+}
 
 
 /*********************** PAGE PRESENTATION ***********************/
@@ -291,7 +307,7 @@ footer{
       padding-left: 1rem;
    }
 
-  #entete,#entete2,#entete3,#entete_region,.accroche,.desc,.prev,.next{
+  #entete,#entete2,#entete3,#entete_region,#entete_partenaires,.accroche,.desc,.prev,.next{
     display:none;
   }
 
@@ -359,7 +375,7 @@ footer{
   color:#fff;
   }
 
-  #entete,#entete2,#entete3,#entete_region,.accroche,.desc,.prev,.next{
+  #entete,#entete2,#entete3,#entete_region,#entete_partenaires,.accroche,.desc,.prev,.next{
     display:block;
   }
 

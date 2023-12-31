@@ -124,6 +124,7 @@ function setAltLanguage() {
                           "presentation": {fr: "../fr/presentation.html", en: "../en/presentation.html"},
                           "galerie": {fr: "../fr/galerie.html", en: "../en/gallery.html"},
                           "parcours": {fr: "../fr/parcours.html", en: "../en/journey.html"},
+                          "formation": {fr: "../fr/formation.html", en: "../fr/formation.html"},
                           "region": {fr: "../fr/region.html", en: "../en/region"}
   };
 

@@ -8,6 +8,7 @@ html  {
 
 body {
   background-color: rgba(210, 219, 226,0.5);
+
 }
 
 /*********************** ENTETE ***********************/
@@ -151,7 +152,7 @@ body {
 }
 
 #caroussel,#fiche1,#fiche2,#fiche3,#fiche4,#fiche5,#fiche6,#fiche7{
-  background:rgb(147, 189, 218); 
+  background:rgb(212, 222, 215);
   padding: 1rem;
   padding-left: 2rem;
   position:relative;
@@ -336,7 +337,7 @@ footer{
       padding-left: 1rem;
    }
 
-  #entete,#entete2,#entete3,#entete_region,#entete_location,#entete_partenaires,.accroche,.desc,.prev,.next{
+  #entete,#entete2,#entete3,#entete_region,#entete_location,#entete_partenaires,.accroche,.desc,.prev,.next,.banner{
     display:none;
   }
 
